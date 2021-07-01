@@ -13,4 +13,7 @@ export default function App() {
         </BrowserRouter>
     </div>
   );
-}//https://www.youtube.com/watch?v=rK0Lz8x7npA
+}
+
+//https://www.youtube.com/watch?v=rK0Lz8x7npA
+//https://openbase.com/js/react-image-gallery
