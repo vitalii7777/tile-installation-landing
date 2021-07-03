@@ -1,0 +1,11 @@
+#backBtn {
+    margin-left: 15px;
+    font-size:3em;
+    border-radius: 100%;
+    background-color: #d8dee5;
+}
+
+#backBtn:hover {
+    transition: 0.3s ease-out;
+    margin-left: 8px;
+}
