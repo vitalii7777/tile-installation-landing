@@ -51,9 +51,9 @@ export const BathroomsAndShowers = () => {
     };
 
     return (
-        <div>
-            Bathrooms And Showers
-            <div onClick={back}>
+        <div style={{display: 'block', margin: '80px 30px 20px 30px'}}>
+            <div style={{textAlign: 'center', fontWeight: 'bold', fontSize: '18px'}}>Bathrooms And Showers</div>
+            <div onClick={back} >
                 <BackBtn/>
             </div>
             <ImageGallery items={mapped} thumbnailPosition={'bottom'} showBullets={true} />
