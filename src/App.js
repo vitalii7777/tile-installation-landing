@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRoutes } from "./routes";
 import { BrowserRouter } from "react-router-dom"
-import { Header } from './components/Header';
+
 
 export default function App() {
   const routes = useRoutes();
@@ -9,7 +9,6 @@ export default function App() {
   return (
     <div>
         <BrowserRouter>
-            <Header/>
               {routes}
         </BrowserRouter>
     </div>
@@ -18,3 +17,4 @@ export default function App() {
 
 //https://www.youtube.com/watch?v=rK0Lz8x7npA
 //https://openbase.com/js/react-image-gallery
+//https://material-ui.com/ru/components/app-bar/

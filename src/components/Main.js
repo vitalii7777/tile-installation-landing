@@ -52,6 +52,17 @@ export default function Main() {
   }, []);
   return (
     <div className={classes.root} id="header">
+      <AppBar className={classes.appbar} elevation={0}>
+        <Toolbar className={classes.appbarWrapper}>
+          <h1 className={classes.appbarTitle}>
+            My<span className={classes.colorText}>Logo.</span>
+          </h1>
+          <NavBar/>
+          {/*<IconButton>*/}
+          {/*  <SortIcon className={classes.icon} />*/}
+          {/*</IconButton>*/}
+        </Toolbar>
+      </AppBar>
       <Collapse
         in={checked}
         {...(checked ? { timeout: 1000 } : {})}
