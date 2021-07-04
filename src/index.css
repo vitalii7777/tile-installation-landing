@@ -1,0 +1,33 @@
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navBar-item div{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navLink{
+    text-decoration: none;
+}
+
+
+
+body {
+    margin: 0;
+}

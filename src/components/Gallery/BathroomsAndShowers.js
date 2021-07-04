@@ -41,24 +41,28 @@ export const BathroomsAndShowers = () => {
             thumbnail: picture,
         }
     })
-    console.log(mapped)
+
 
 
 
     let history = useHistory();
     const back = () => {
-        history.goBack()
+        history.push('/');
     };
 
     return (
-        <div>
+        <div style={{
+            display: "block",
+            background: 'grey',
+            height: '100vh',
+        }}>
             <div style={{
                 textAlign: 'center',
                 fontWeight: 'bold',
                 fontSize: '18px',
                 display: 'block',
                 margin: '10px 10px 10px 10px',
-                color: 'Black'
+                color: 'White'
             }}>
                 Bathrooms And Showers
             </div>
