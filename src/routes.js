@@ -12,30 +12,39 @@ import { ContactUs } from "./pages/ContactUs";
 export const useRoutes = () => {
     return(
         <Switch>
+
             <Route path="/" exact>
                 <Home/>
             </Route>
+
             <Route path="/about-us" exact>
                 <AboutUs/>
             </Route>
+
             <Route path="/gallery" exact>
                 <Gallery/>
             </Route>
+
             <Route path="/contactUs" exact>
                 <ContactUs/>
             </Route>
+
             <Route path="/bathrooms" exact>
                 <BathroomsAndShowers/>
             </Route>
+
             <Route path="/floors">
                 <Floors/>
             </Route>
+
             <Route path="/kitchens" exact>
                 <Kitchens/>
             </Route>
+
             <Route path="/fireplaces" exact>
                 <Fireplaces/>
             </Route>
+
         </Switch>
     )
 };
