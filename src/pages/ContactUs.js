@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export const AboutUs = () => {
+export const ContactUs = () => {
     const classes = useStyles();
     return (
         <Fragment>
@@ -31,8 +31,7 @@ export const AboutUs = () => {
 
 
             <div className={classes.contactUs}>
-                READ MORE ABOUT OUR COMPANY
-                We are specialized in the production of ceramic tiles. BeTiles is technologically the most contemporary factory.
+                Contact Info Should Be here
             </div>
         </Fragment>
     )

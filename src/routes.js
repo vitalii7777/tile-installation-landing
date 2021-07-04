@@ -6,6 +6,8 @@ import { Kitchens } from './components/Gallery/Kitchens';
 import { Fireplaces } from './components/Gallery/Fireplaces';
 import { Home } from "./pages/Home";
 import { AboutUs } from "./pages/AboutUs";
+import { Gallery } from "./pages/Gallery";
+import { ContactUs } from "./pages/ContactUs";
 
 export const useRoutes = () => {
     return(
@@ -15,6 +17,12 @@ export const useRoutes = () => {
             </Route>
             <Route path="/about-us" exact>
                 <AboutUs/>
+            </Route>
+            <Route path="/gallery" exact>
+                <Gallery/>
+            </Route>
+            <Route path="/contactUs" exact>
+                <ContactUs/>
             </Route>
             <Route path="/bathrooms" exact>
                 <BathroomsAndShowers/>

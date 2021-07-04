@@ -1,6 +1,8 @@
 import React, {Fragment} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {NavBar} from "../components/NavBar";
+import PlaceToVisit from "../components/PlaceToVisit";
+
 
 const useStyles = makeStyles((theme) => ({
     head: {
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export const AboutUs = () => {
+export const Gallery = () => {
     const classes = useStyles();
     return (
         <Fragment>
@@ -28,12 +30,7 @@ export const AboutUs = () => {
             <div className={classes.nav2}>
                 <NavBar/>
             </div>
-
-
-            <div className={classes.contactUs}>
-                READ MORE ABOUT OUR COMPANY
-                We are specialized in the production of ceramic tiles. BeTiles is technologically the most contemporary factory.
-            </div>
+            <PlaceToVisit isWindowPosition={false}/>
         </Fragment>
     )
 };
