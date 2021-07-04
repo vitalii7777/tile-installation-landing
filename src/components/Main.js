@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appbarWrapper: {
     width: '40%',
-    margin: '0 auto',
+    margin: '0 0px 0px 30px',
   },
   appbarTitle: {
     flexGrow: '1',
