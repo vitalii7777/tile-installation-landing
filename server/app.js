@@ -14,8 +14,9 @@ const port = process.env.PORT || 5000;
 
 route.post('/mail-send', async (req, res) => {
     try {
-        const { ...props } = req.body;
-        await mailSend(props).catch(console.error);
+        const { form } = req.body;
+        console.log(form)
+        await mailSend(form).catch(console.error);
         res.status(200).json({ msg: 'Mail Send'})
     } catch (e) {
         res.status(500).json({message: 'Can not send email', e})
