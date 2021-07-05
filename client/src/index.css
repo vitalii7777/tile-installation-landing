@@ -1,0 +1,42 @@
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 150px;
+}
+
+ul {
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navBar-item div{
+    padding: 0 50px 0 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navBar-item :hover {
+    transition: 0.5s ease-out;
+    color: #5AFF3D;
+    text-decoration: underline;
+    text-siz: underline;
+}
+
+.navLink{
+    text-decoration: none;
+}
+
+
+
+body {
+    margin: 0;
+}

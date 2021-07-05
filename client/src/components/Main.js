@@ -4,6 +4,8 @@ import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import { NavBar } from "./NavBar";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     background: 'none',
   },
   appbarWrapper: {
-    width: '80%',
-    margin: '0 auto',
+    width: '40%',
+    margin: '0 0px 0px 30px',
   },
   appbarTitle: {
     flexGrow: '1',
@@ -42,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '4rem',
   },
 }));
-export default function Header() {
+export default function Main() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
@@ -55,12 +57,12 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             My<span className={classes.colorText}>Logo.</span>
           </h1>
-          <IconButton>
-            <SortIcon className={classes.icon} />
-          </IconButton>
+          <NavBar/>
+          {/*<IconButton>*/}
+          {/*  <SortIcon className={classes.icon} />*/}
+          {/*</IconButton>*/}
         </Toolbar>
       </AppBar>
-
       <Collapse
         in={checked}
         {...(checked ? { timeout: 1000 } : {})}
@@ -68,7 +70,7 @@ export default function Header() {
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            Advancad Tile Installation <br />
+            Advanced Tile Installation <br />
             Our <span className={classes.colorText}>Jobs</span>
           </h1>
           <Scroll to="place-to-visit" smooth={true}>

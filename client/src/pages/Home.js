@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Main from "../components/Main";
 import PlaceToVisit from "../components/PlaceToVisit";
 import React, {Fragment} from "react";
 import {CssBaseline} from "@material-ui/core";
@@ -21,7 +21,7 @@ export const Home = () => {
         <Fragment>
             <div className={classes.root}>
              <CssBaseline />
-            <Header />
+            <Main />
             <PlaceToVisit />
             </div>
         </Fragment>

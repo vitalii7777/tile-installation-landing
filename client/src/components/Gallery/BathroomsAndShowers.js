@@ -41,19 +41,35 @@ export const BathroomsAndShowers = () => {
             thumbnail: picture,
         }
     })
-    console.log(mapped)
+
 
 
 
     let history = useHistory();
     const back = () => {
-        history.goBack()
+        history.push('/');
     };
 
     return (
-        <div>
-            Bathrooms And Showers
-            <div onClick={back}>
+        <div style={{
+            display: "block",
+            background: 'grey',
+            height: '100vh',
+        }}>
+            <div style={{
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontSize: '18px',
+                display: 'block',
+                margin: '10px 10px 10px 10px',
+                color: 'White'
+            }}>
+                Bathrooms And Showers
+            </div>
+            <div onClick={back}  style={{
+                zIndex: 1,
+                position: 'fixed',
+            }}>
                 <BackBtn/>
             </div>
             <ImageGallery items={mapped} thumbnailPosition={'bottom'} showBullets={true} />

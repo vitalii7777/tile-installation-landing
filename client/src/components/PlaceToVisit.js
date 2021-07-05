@@ -20,9 +20,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function() {
+export default function({isWindowPosition=true}) {
   const classes = useStyles();
-  const checked = useWindowPosition('header');
+  const checked = isWindowPosition ? useWindowPosition('header') : true;
+
 
   return (
     <div className={classes.root} id="place-to-visit">
