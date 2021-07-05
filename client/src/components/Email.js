@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import { emailSend } from '../request/SendEmailReq'
 import { Grid, TextField, Button, Card, CardContent, Typography } from '@material-ui/core';
 
 
 export const Email = () => {
+
+    const history = useHistory();
+
     const [form, setForm] = useState({
         firstName: '',
         lastName: '',
@@ -13,18 +17,17 @@ export const Email = () => {
     });
 
     const changeHandler = event => {
+        event.preventDefault();
         setForm ({...form, [event.target.name]: event.target.value});
+
     };
 
     const clickHandler = async () => {
-        // const email = {
-        //     message: 'REACT'
-        // };
         await emailSend(form)
     };
 
     return (
-        <div className="App">
+        <div className="EmailForm">
             <Grid>
                 <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
                     <CardContent>

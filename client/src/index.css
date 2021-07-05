@@ -28,7 +28,6 @@ ul {
     transition: 0.5s ease-out;
     color: #5AFF3D;
     text-decoration: underline;
-    text-siz: underline;
 }
 
 .navLink{
@@ -51,4 +50,14 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.EmailForm{
+    float: right;
+    margin-right: 10%;
+}
+
+.ContactUsInfo{
+    float: left;
+    margin-left: 10%;
 }

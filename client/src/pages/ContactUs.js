@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { NavBar } from "../components/NavBar";
 import { Email } from '../components/Email';
+import { ContactUsInfo } from '../components/ContactUsInfo';
 
 const useStyles = makeStyles((theme) => ({
     head: {
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 0 0 530px',
     },
     contactUs: {
-
+      
     }
 }));
 
@@ -32,7 +33,7 @@ export const ContactUs = () => {
 
 
             <div className={classes.contactUs}>
-                Contact Info Should Be here
+                <ContactUsInfo/>
                 <Email/>
             </div>
         </Fragment>
