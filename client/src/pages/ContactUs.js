@@ -16,16 +16,20 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 0 0 530px',
     },
     contactUs: {
-        marginTop: '2%',
-        backgroundColor: 'red'
-    }
+        display: 'flex',
+        justifyContent: 'space-between',
+        maxWidth:'100%',
+        backgroundColor: 'grey',
+        padding: '2%',
+
+    },
 }));
 
 
 export const ContactUs = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div  className={classes.head}>
             <div className={classes.head}>
             </div>
             <div className={classes.nav2}>
@@ -34,9 +38,12 @@ export const ContactUs = () => {
 
 
             <div className={classes.contactUs}>
-                <ContactUsInfo/>
-                <Email/>
+                    <Email/>
+                    <ContactUsInfo/>
             </div>
         </div>
     )
 };
+
+
+//https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_responsive

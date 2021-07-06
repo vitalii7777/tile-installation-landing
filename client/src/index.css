@@ -53,11 +53,11 @@ input[type=number] {
 }
 
 .EmailForm{
-    float: right;
-    margin-right: 10%;
+    float: left;
+    margin-left: 20%;
 }
 
 .ContactUsInfo{
-    float: left;
-    margin-left: 10%;
+    float: right;
+    margin-right: 20%;
 }
