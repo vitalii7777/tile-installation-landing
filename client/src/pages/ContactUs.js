@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 0 0 530px',
     },
     contactUs: {
-      
+        marginTop: '2%',
+        backgroundColor: 'red'
     }
 }));
 
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 export const ContactUs = () => {
     const classes = useStyles();
     return (
-        <Fragment>
+        <div>
             <div className={classes.head}>
             </div>
             <div className={classes.nav2}>
@@ -36,6 +37,6 @@ export const ContactUs = () => {
                 <ContactUsInfo/>
                 <Email/>
             </div>
-        </Fragment>
+        </div>
     )
 };
