@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     },
     contactUs: {
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
+        flexDirection: 'column',
         maxWidth:'100%',
         backgroundColor: 'grey',
         padding: '2%',
-
     },
 }));
 
@@ -38,8 +38,8 @@ export const ContactUs = () => {
 
 
             <div className={classes.contactUs}>
-                    <Email/>
-                    <ContactUsInfo/>
+                <ContactUsInfo/>
+                <Email/>
             </div>
         </div>
     )
