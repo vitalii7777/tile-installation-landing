@@ -44,9 +44,9 @@ export const AboutUs = () => {
     return (
         <Fragment>
             <div className={classes.head}>
-            </div>
-            <div className={classes.navBarPages}>
-                <NavBar/>
+                <div className={classes.navBarPages}>
+                    <NavBar/>
+                </div>
             </div>
 
 
