@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
-const mailSend  = async (props) => {
-    const { message } = props;
+const mailSend  = async (form) => {
+    const { firstName, lastName, email, phone, message } = form;
 
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -12,11 +12,12 @@ const mailSend  = async (props) => {
             pass: 'Vitalik2651165322', // generated ethereal password
         },
     });
+    console.log(firstName, lastName, email, phone, message);
     const info = await transporter.sendMail({
         from: 'From Site', // sender address
         to: "qatest.apiko@gmail.com", // list of receivers
         subject: "Hello ✔", // Subject line
-        text: message, // plain text body
+        text: `${firstName}, ${lastName}, ${email}, ${phone}, ${message}`, // plain text body
         // html: "<b>ASD`</b>", // html body
     });
     console.log("Message sent: %s", info.messageId);
