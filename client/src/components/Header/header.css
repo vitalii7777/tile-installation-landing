@@ -1,11 +1,9 @@
 /*Desktop View*/
 .header {
     display: flex;
-    background: #616161;
-    opacity: 90%;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 70px;
     position: fixed;
     width: 100%;
     padding: 0 0 0 50px;
@@ -13,6 +11,21 @@
     font-weight: bold;
     font-size: 18px;
 }
+.header-on-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 0 0 0 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: #616161;
+    opacity: 90%;
+}
+
 .logo-nav {
     display: flex;
     align-items: center;
@@ -47,6 +60,7 @@
 
 .option div {
     color: white;
+    font-family: 'Nunito';
 }
 
 .mobile-menu {

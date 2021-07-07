@@ -45,7 +45,7 @@ export default function Main() {
   }, []);
   return (
     <div className={classes.root} id="header">
-      <Head/>
+      <Head isHome={true}/>
       <Collapse
         in={checked}
         {...(checked ? { timeout: 1000 } : {})}
