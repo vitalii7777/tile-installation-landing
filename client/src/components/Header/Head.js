@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-
+import {NavLink} from "react-router-dom";
 import { ReactComponent as CloseMenu } from "./icons/x.svg";
 import { ReactComponent as MenuIcon } from "./icons/menu.svg";
 import { ReactComponent as Logo } from "./icons/logo.svg";
 import "./header.css";
 
+
 export const Head = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+
     return (
         <div className="header">
             <div className="logo-nav">
@@ -17,18 +18,31 @@ export const Head = () => {
                         <Logo className="logo" />
                     </a>
                 </div>
+
                 <ul className={click ? "nav-options active" : "nav-options"}>
 
-                    <li className="option" onClick={closeMobileMenu}>
-                        <a href="#">ABOUT</a>
+                    <li className="option">
+                        <NavLink className="navLink" to="/" exact>
+                            <div>Home</div>
+                        </NavLink>
                     </li>
 
-                    <li className="option" onClick={closeMobileMenu}>
-                        <a href="#">CONTACT</a>
+                    <li className="option">
+                        <NavLink className="navLink" to="/about-us" exact>
+                            <div>About Us</div>
+                        </NavLink>
                     </li>
 
-                    <li className="option" onClick={closeMobileMenu}>
-                        <a href="#">BLOG</a>
+                    <li className="option">
+                        <NavLink  className="navLink" to="/gallery">
+                            <div>Gallery</div>
+                        </NavLink>
+                    </li>
+
+                    <li className="option">
+                        <NavLink className="navLink" to="/contactUs">
+                            <div>Contact Us</div>
+                        </NavLink>
                     </li>
 
                 </ul>

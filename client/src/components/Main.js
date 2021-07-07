@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   title: {
+    paddingTop:'7%',
     color: '#fff',
     fontSize: '4.5rem',
   },
