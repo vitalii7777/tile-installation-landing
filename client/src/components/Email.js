@@ -29,7 +29,7 @@ export const Email = () => {
     return (
         <div className="EmailForm">
             <Grid>
-                <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
+                <Card style={{ maxWidth: 700, padding: "20px 5px", margin: "0 auto" }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" align="center">
                             Contact Us

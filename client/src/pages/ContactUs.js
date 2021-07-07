@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         flexDirection: 'column',
         maxWidth:'100%',
-        backgroundColor: 'grey',
-        padding: '2%',
+        backgroundColor: '#ebebeb',
+        padding: '3%',
     },
 }));
 
