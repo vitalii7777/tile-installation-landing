@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { ReactComponent as CloseMenu } from "./icons/x.svg";
 import { ReactComponent as MenuIcon } from "./icons/menu.svg";
 import { ReactComponent as Logo } from "./icons/logo.svg";
@@ -17,35 +18,22 @@ export const Head = () => {
                     </a>
                 </div>
                 <ul className={click ? "nav-options active" : "nav-options"}>
+
                     <li className="option" onClick={closeMobileMenu}>
                         <a href="#">ABOUT</a>
                     </li>
+
                     <li className="option" onClick={closeMobileMenu}>
                         <a href="#">CONTACT</a>
                     </li>
+
                     <li className="option" onClick={closeMobileMenu}>
                         <a href="#">BLOG</a>
                     </li>
-                    <li className="option mobile-option" onClick={closeMobileMenu}>
-                        <a href="#">SIGN-IN</a>
-                    </li>
-                    <li className="option mobile-option" onClick={closeMobileMenu}>
-                        <a href="" className="sign-up">
-                            SIGN-UP
-                        </a>
-                    </li>
+
                 </ul>
             </div>
-            <ul className="signin-up">
-                <li className="sign-in" onClick={closeMobileMenu}>
-                    <a href="#">SIGN-IN</a>
-                </li>
-                <li onClick={closeMobileMenu}>
-                    <a href="" className="signup-btn">
-                        SIGN-UP
-                    </a>
-                </li>
-            </ul>
+
             <div className="mobile-menu" onClick={handleClick}>
                 {click ? (
                     <CloseMenu className="menu-icon" />
