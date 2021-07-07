@@ -14,9 +14,11 @@ export const Head = () => {
         <div className="header">
             <div className="logo-nav">
                 <div className="logo-container">
-                    <a href="#">
-                        <Logo className="logo" />
-                    </a>
+                    <div className="option">
+                        <NavLink className="navLink" to="/" exact>
+                            <Logo className="logo" />
+                        </NavLink>
+                    </div>
                 </div>
 
                 <ul className={click ? "nav-options active" : "nav-options"}>
