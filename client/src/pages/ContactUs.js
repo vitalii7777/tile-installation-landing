@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { NavBar } from "../components/NavBar";
 import { Email } from '../components/Email';
 import { ContactUsInfo } from '../components/ContactUsInfo';
+import {Head} from "../components/Header/Head";
 
 const useStyles = makeStyles((theme) => ({
     head: {
@@ -29,19 +30,16 @@ const useStyles = makeStyles((theme) => ({
 export const ContactUs = () => {
     const classes = useStyles();
     return (
-        <div  className={classes.head}>
+        <Fragment>
             <div className={classes.head}>
+                <Head/>
             </div>
-            <div className={classes.nav2}>
-                <NavBar/>
-            </div>
-
 
             <div className={classes.contactUs}>
                 <ContactUsInfo/>
                 <Email/>
             </div>
-        </div>
+        </Fragment>
     )
 };
 

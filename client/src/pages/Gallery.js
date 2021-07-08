@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {NavBar} from "../components/NavBar";
 import PlaceToVisit from "../components/PlaceToVisit";
+import {Head} from "../components/Header/Head";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,9 +27,7 @@ export const Gallery = () => {
     return (
         <Fragment>
             <div className={classes.head}>
-            </div>
-            <div className={classes.nav2}>
-                <NavBar/>
+                <Head/>
             </div>
             <PlaceToVisit isWindowPosition={false}/>
         </Fragment>

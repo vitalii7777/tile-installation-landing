@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {NavBar} from "../components/NavBar";
 import sample from '/home/vitalii/TileInstallation/tile-installation-landing/client/src/Video/sample.mp4';
+import {Head} from "../components/Header/Head";
 
 const useStyles = makeStyles((theme) => ({
     head: {
@@ -44,9 +45,7 @@ export const AboutUs = () => {
     return (
         <Fragment>
             <div className={classes.head}>
-            </div>
-            <div className={classes.navBarPages}>
-                <NavBar/>
+                <Head/>
             </div>
 
 

@@ -1,0 +1,121 @@
+/*Desktop View*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 0 0 0 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.header-on-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 0 0 0 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: #616161;
+    opacity: 90%;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 45px;
+    height: 45px;
+    color: white;
+}
+.nav-options {
+    align-items: center;
+    padding-left: 50vw;
+    float:right;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+    list-style-type: none;
+}
+.mobile-option {
+    display: none;
+}
+
+.option :hover {
+    color: #5AFF3D;
+}
+
+.option div {
+    color: white;
+    font-family: 'Nunito';
+}
+
+.mobile-menu {
+    display: none;
+}
+@media (max-width: 900px) {
+    /*Mobile View */
+    .header {
+        padding: 0px 10px;
+    }
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+    .nav-options {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        flex-direction: column;
+        list-style-type: none;
+        grid-gap: 0px;
+    }
+    .nav-options.active {
+        background: #0d0d0d;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        align-content: center;
+        padding-left: 0px;
+    }
+
+    .menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+    }
+    .option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+    }
+
+}
+.mobile-menu {
+    display: block;
+}
