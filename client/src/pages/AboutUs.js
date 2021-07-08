@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 0 0 530px',
     },
     content: {
-        // marginTop: '-21px',
-        background: 'rgba(0, 0, 0, 0.5)',
+        background: 'rgba(0, 0, 0, 0.2)',
         minWidth: '100%',
-        minHeight: '100%',
-        // position: 'static',
-        position: 'fixed',
+        position: 'absolute',
+        top: '0',
+        bottom: '0',
+        zIndex: '-5'
     },
     videoTag: {
         zIndex: '-1',
@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
         opacity: '50%',
         minWidth: '100%',
         minHeight: '100%',
-        background: 'rgba(0, 0, 0, 0.9)',
     },
 
     contactUs: {
@@ -81,7 +80,7 @@ export const AboutUs = () => {
             <div className={classes.head}>
                 <Head/>
             </div>
-            <div className={classes.content77777777}>
+            <div className={classes.content}>
                 <video className={classes.videoTag} autoPlay loop muted>
                     <source src={sample} type='video/mp4' />
                 </video>
