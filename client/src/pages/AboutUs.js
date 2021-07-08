@@ -3,6 +3,8 @@ import {makeStyles} from "@material-ui/core/styles";
 import {NavBar} from "../components/NavBar";
 import sample from '/home/vitalii/TileInstallation/tile-installation-landing/client/src/Video/sample.mp4';
 import {Head} from "../components/Header/Head";
+import {ContactUsInfo} from "../components/ContactUsInfo";
+import {Email} from "../components/Email";
 
 const useStyles = makeStyles((theme) => ({
     head: {
@@ -25,19 +27,51 @@ const useStyles = makeStyles((theme) => ({
     },
     videoTag: {
         zIndex: '-1',
-        // position: 'fixed',
-        position: 'absolute',
+        position: 'fixed',
+        // position: 'absolute',
         opacity: '50%',
         minWidth: '100%',
         minHeight: '100%',
-
+        background: 'rgba(0, 0, 0, 0.9)',
     },
 
-    text: {
-        margin: '0 20px 0 30px',
-    }
+    contactUs: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        maxWidth:'100%',
+        backgroundColor: '#ebebeb',
+        padding: '3%',
+    },
 
 }));
+
+
+// export const AboutUs = () => {
+//     const classes = useStyles();
+//     return (
+//         <Fragment>
+//             <div className={classes.head}>
+//                 <Head/>
+//             </div>
+//
+//
+//             <div className={classes.content}>
+//                 <video className={classes.videoTag} autoPlay loop muted>
+//                     <source src={sample} type='video/mp4' />
+//                 </video>
+//                     <div className={classes.text}>
+//                         <h1>Our Company</h1>
+//                         <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+//                             expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui
+//                             nemore latine molestiae, ad mutat oblique delicatissimi pro.Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+//                             expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui
+//                             nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+//                     </div>
+//                 </div>
+//         </Fragment>
+//     )
+// };
 
 
 export const AboutUs = () => {
@@ -47,22 +81,14 @@ export const AboutUs = () => {
             <div className={classes.head}>
                 <Head/>
             </div>
-
-
-            <div className={classes.content}>
+            <div className={classes.content77777777}>
                 <video className={classes.videoTag} autoPlay loop muted>
                     <source src={sample} type='video/mp4' />
                 </video>
-                    <div className={classes.text}>
-                        <h1>Our Company</h1>
-                        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
-                            expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui
-                            nemore latine molestiae, ad mutat oblique delicatissimi pro.Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
-                            expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui
-                            nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-                    </div>
-                </div>
+            </div>
+
         </Fragment>
     )
 };
+
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video
