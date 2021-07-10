@@ -37,7 +37,7 @@ export const Head = ({ isHome }) => {
 
           <li className="option">
             <NavLink className="navLink" to="/gallery" activeClassName="selected">
-              <div>Projects</div>
+              <div>Gallery</div>
             </NavLink>
           </li>
 

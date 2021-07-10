@@ -64,8 +64,7 @@
     text-decoration-style: solid;
     text-decoration-color: #5AFF3D;
     text-decoration-thickness: 2px;
-
-    border-bottom: 1px solid #5AFF3D;
+    text-underline-position: under;
 }
 
 .option div {
