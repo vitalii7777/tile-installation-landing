@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { NavBar } from "../components/NavBar";
 import { Email } from '../components/Email';
 import { ContactUsInfo } from '../components/ContactUsInfo';
 import {Head} from "../components/Header/Head";

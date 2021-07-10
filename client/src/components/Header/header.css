@@ -55,7 +55,17 @@
 }
 
 .option :hover {
-    color: #5AFF3D;
+    color: #5AFF3D
+}
+
+.selected div{
+    color: #5AFF3D !important;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #5AFF3D;
+    text-decoration-thickness: 2px;
+
+    border-bottom: 1px solid #5AFF3D;
 }
 
 .option div {
@@ -65,6 +75,13 @@
 
 .mobile-menu {
     display: none;
+}
+
+@media (max-width: 1160px){
+    .nav-options {
+        transition: padding-left 1s;
+        padding-left: 35vw;
+    }
 }
 @media (max-width: 900px) {
     /*Mobile View */
@@ -118,4 +135,42 @@
 }
 .mobile-menu {
     display: block;
+    padding-right: 3vw;
+}
+
+/*Nav Bar*/
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 150px;
+}
+
+ul {
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.navBar-item div{
+    padding: 0 50px 0 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navBar-item :hover {
+    transition: 0.5s ease-out;
+    color: #5AFF3D;
+    text-decoration: underline;
+}
+
+.navLink{
+    text-decoration: none;
 }

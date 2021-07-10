@@ -1,8 +1,7 @@
 import React, {Fragment} from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import {NavBar} from "../components/NavBar";
 import PlaceToVisit from "../components/PlaceToVisit";
-import {Head} from "../components/Header/Head";
+import { Head } from "../components/Header/Head";
 
 
 const useStyles = makeStyles((theme) => ({
