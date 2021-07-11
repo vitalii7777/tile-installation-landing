@@ -27,7 +27,6 @@ export default function({isWindowPosition=true}) {
 
   return (
     <div className={classes.root} id="place-to-visit">
-
       <NavLink to="/bathrooms" className={classes.navLink}>
         <ImageCard place={places[0]} checked={checked} />
       </NavLink>

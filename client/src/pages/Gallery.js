@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     nav2: {
         margin: '0 0 0 530px',
     },
-    contactUs: {
-
+    content: {
+        backgroundColor: '#ebebeb',
     }
 }));
 
@@ -28,7 +28,9 @@ export const Gallery = () => {
             <div className={classes.head}>
                 <Head/>
             </div>
-            <PlaceToVisit isWindowPosition={false}/>
+            <div className={classes.content}>
+                <PlaceToVisit isWindowPosition={false}/>
+            </div>
         </Fragment>
     )
 };
