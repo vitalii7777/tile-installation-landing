@@ -9,7 +9,7 @@ const mailSend  = async (form) => {
         secure: false, // true for 465, false for other ports
         auth: {
             user: 'vitaliistorage@gmail.com', // generated ethereal user
-            pass: 'Vitalik2651165322', // generated ethereal password
+            pass: 'pnihkdyfyhvjvivw', // generated ethereal password
         },
     });
     console.log(firstName, lastName, email, phone, message);
