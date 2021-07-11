@@ -56,7 +56,7 @@ export default function Main() {
             Advanced Tile Installation <br />
             Our <span className={classes.colorText}>Jobs</span>
           </h1>
-          <Scroll to="place-to-visit" smooth={true}>
+          <Scroll to="place-to-visit" smooth={true} offset={-70}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
             </IconButton>

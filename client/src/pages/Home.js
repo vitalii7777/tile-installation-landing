@@ -23,23 +23,12 @@ const useStyles = makeStyles((theme) => ({
 export const Home = () => {
     const classes = useStyles();
 
-    // const StyledD = Styled.div`
-    //         @media screen and (max-width: 768px),
-    //                screen and (max-height: 630px) {
-    //                       padding-top: 70%;
-    //                 }
-    //        @media screen and (max-width: 414px),
-    //                screen and (max-height: 736px) {
-    //                       padding-top: 40%;
-    //                 }
-    //          @media only screen and (device-width: 768px)  {
-    //                       margin-top: -25%;
-    //                 }
-    //           @media only screen and (device-width: 1024px) {
-    //                       margin-top: -35%;
-    //                 }
-    //
-    // `;
+    const StyledD = Styled.div`
+              @media only screen and (device-width: 1024px) and (device-height: 1366px) {
+                          margin-top: -45%;
+                    }
+
+    `;
 
     return (
         <Fragment>
@@ -47,9 +36,9 @@ export const Home = () => {
              <CssBaseline />
             <Main />
             </div>
-            <div id="place-to-visit" className={classes.fuckMe}>
+            <StyledD id="place-to-visit">
                 <PlaceToVisit />
-            </div>
+            </StyledD>
         </Fragment>
     )
 };
