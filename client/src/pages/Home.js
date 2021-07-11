@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
         // backgroundSize: 'contain',
         backgroundSize: 'auto',
     },
+
+    galleryBlockOnHomePage: {
+        maxBlockSize: 'max-content',
+    },
 }));
 
 
@@ -20,27 +24,10 @@ export const Home = () => {
     const classes = useStyles();
 
     const StyledD = Styled.div`
-            @media screen and (max-width: 768px), 
-                   screen and (max-height: 630px) {
-                          padding-top: 70%;
+              @media only screen and (device-width: 1024px) and (device-height: 1366px) {
+                          margin-top: -45%;
                     }
-             @media screen and (max-width: 768px), 
-                    screen and (max-height: 665px) {
-                          padding-top: 60%;
-                    }
-             @media screen and (max-width: 768px), 
-                    screen and (max-height: 670px) {
-                          padding-top: 50%;
-                    }
-            @media screen and (max-width: 1024px), 
-                    screen and (max-height: 1024px) {
-                            margin-top: -35%;
-                            align-content: space-between;
-                          
-                           
-               
-            }              
-             
+
     `;
 
     return (
@@ -48,10 +35,29 @@ export const Home = () => {
             <div className={classes.root}>
              <CssBaseline />
             <Main />
-                <StyledD>
-                    <PlaceToVisit />
-                </StyledD>
             </div>
+            <StyledD id="place-to-visit">
+                <PlaceToVisit />
+            </StyledD>
         </Fragment>
     )
 };
+
+// @media screen and (max-width: 1024px),
+// screen and (max-height: 1366px) {
+//     margin-top: -35%;
+//     align-content: space-between;
+//
+//
+//
+// }
+
+
+// @media screen and (max-width: 768px),
+// screen and (max-height: 630px) {
+//     padding-top: 70%;
+// }
+// @media screen and (max-width: 768px),
+// screen and (max-height: 665px) {
+//     padding-top: 60%;
+// }

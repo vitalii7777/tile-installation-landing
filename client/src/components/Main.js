@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'top',
-    height: '100vh',
+    height: '50vh',
     fontFamily: 'Nunito',
   },
 
@@ -56,7 +56,7 @@ export default function Main() {
             Advanced Tile Installation <br />
             Our <span className={classes.colorText}>Jobs</span>
           </h1>
-          <Scroll to="place-to-visit" smooth={true}>
+          <Scroll to="place-to-visit" smooth={true} offset={-70}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
             </IconButton>
