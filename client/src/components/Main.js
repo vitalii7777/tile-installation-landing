@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'top',
-    height: '100vh',
+    height: '50vh',
     fontFamily: 'Nunito',
   },
 
