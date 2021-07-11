@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     minHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
     },
