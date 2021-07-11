@@ -24,25 +24,25 @@ export const Head = ({ isHome }) => {
 
         <ul className={click ? 'nav-options active' : 'nav-options'}>
           <li className="option">
-            <NavLink className="navLink" to="/" exact>
+            <NavLink className="navLink" to="/" exact activeClassName="selected">
               <div>Home</div>
             </NavLink>
           </li>
 
           <li className="option">
-            <NavLink className="navLink" to="/about-us" exact>
+            <NavLink className="navLink" exact activeClassName="selected" to="/about-us">
               <div>About Us</div>
             </NavLink>
           </li>
 
           <li className="option">
-            <NavLink className="navLink" to="/gallery">
+            <NavLink className="navLink" to="/gallery" activeClassName="selected">
               <div>Gallery</div>
             </NavLink>
           </li>
 
           <li className="option">
-            <NavLink className="navLink" to="/contactUs">
+            <NavLink className="navLink" to="/contactUs" activeClassName="selected">
               <div>Contact Us</div>
             </NavLink>
           </li>
