@@ -7,7 +7,7 @@
     "frontEnd": "npm run start --prefix client",
     "frontEnd:build": "npm run build --prefix client",
     "start": "npm run backed & npm run frontEnd",
-    "start:prod": "cross-env NODE_ENV=production npm run backed"
+    "start:prod": "cross-env NODE_ENV=production PORT=8080 npm run backed"
   },
   "author": "Vitalii Budniak",
   "license": "ISC",
