@@ -15,6 +15,11 @@ const useStyles = makeStyles({
   },
   media: {
     height: 440,
+    "&:hover": {
+      transition: 'transform .5s',
+      transform: 'scale(1.05)', /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
   },
   title: {
     fontFamily: 'Nunito',
