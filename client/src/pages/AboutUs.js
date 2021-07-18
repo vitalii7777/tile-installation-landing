@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import sample from '/home/vitalii/TileInstallation/tile-installation-landing/client/src/Video/sample.mp4';
+// import sample from '/home/vitalii/TileInstallation/tile-installation-landing/client/src/Video/sample.mp4';
+import sample from '../Video/sample.mp4';
+
 import { Head } from '../components/Header/Head';
 
 const useStyles = makeStyles(theme => ({
