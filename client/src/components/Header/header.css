@@ -10,6 +10,7 @@
     color: white;
     font-weight: bold;
     font-size: 18px;
+    z-index: 1;
 }
 .header-on-home{
     display: flex;
