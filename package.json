@@ -5,11 +5,14 @@
   "scripts": {
     "backed": "npm run startServer --prefix server",
     "frontEnd": "npm run start --prefix client",
-    "start": "npm run backed & npm run frontEnd"
+    "frontEnd:build": "npm run build --prefix client",
+    "start": "npm run backed & npm run frontEnd",
+    "start:prod": "cross-env NODE_ENV=production npm run backed"
   },
   "author": "Vitalii Budniak",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "nodemailer": "^6.6.2"
   }

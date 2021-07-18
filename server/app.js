@@ -1,9 +1,8 @@
 const express = require("express");
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 const app = express();
 const mailSend = require('./nodeMail');
-
+const path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,6 +23,14 @@ route.post('/mail-send', async (req, res) => {
 });
 
 app.use('/api', route);
+
+if (process.env.NODE_ENV === 'production'){
+    app.use('/', express.static(path.join(__dirname, '../client', 'build')));
+    app.get('*', (req, res) =>{
+        res.sendFile(path.resolve(__dirname, '../client', 'build', 'index.html'))
+    });
+}
+
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
